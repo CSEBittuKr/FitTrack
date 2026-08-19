@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-🔗 **[View FitTrack Live](https://fit-track-two-gold.vercel.app/)**
+[View FitTrack Live](https://fit-track-two-gold.vercel.app/)
 
 ## About
 
