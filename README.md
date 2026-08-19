@@ -4,44 +4,23 @@
 
 FitTrack is a premium, responsive fitness and habit-tracking web experience designed to help users monitor daily activity, build consistent habits, and track personal goals through a simple and intuitive dashboard.
 
-## Live Demo
+---
 
-**Live Website:** https://fit-track-two-gold.vercel.app/
+## Interactive Preview
 
-## GitHub Repository
+<p align="center">
+  <img src="assets/fittrack-demo.gif" alt="FitTrack Interactive Demo" width="900">
+</p>
 
-**Source Code:** https://github.com/CSEBittuKr/FitTrack
+The animated preview above provides a quick walkthrough of the FitTrack experience.
 
 ---
 
-## Preview
+## Live Demo
 
-### Interactive Demo
+**FitTrack — Live Website**
 
-![FitTrack Demo](assets/fittrack-demo.gif)
-
-### Live Product
-
-Explore the complete interactive experience:
-
-**https://fit-track-two-gold.vercel.app/**
-
-### Demo Video
-
-Watch a short walkthrough of the FitTrack project:
-
-**[▶ Watch FitTrack Demo](YOUR_VIDEO_LINK_HERE)**
-
-The demo covers:
-
-* Premium landing page
-* Product dashboard
-* Daily activity metrics
-* Habit tracking
-* Interactive dashboard tabs
-* Responsive navigation
-* Mobile responsive layout
-* Micro-interactions
+[Open the live FitTrack website](https://fit-track-two-gold.vercel.app/)
 
 ---
 
@@ -49,17 +28,22 @@ The demo covers:
 
 FitTrack was created as a frontend engineering assignment focused on building a polished, responsive and interactive product homepage.
 
-The main goal was to create a product experience that communicates its value quickly while also showing the actual product interface instead of relying only on marketing content.
+The goal was to create a product experience that communicates its value quickly while showing the actual product interface instead of relying only on marketing content.
 
-The design focuses on clean visual hierarchy, meaningful interactions, responsive layouts and an interface that feels like a real modern SaaS product.
+The design focuses on:
+
+* Clean visual hierarchy
+* Responsive design
+* Product-focused UI
+* Meaningful interactions
+* Simple implementation
+* Honest product presentation
 
 ---
 
 ## Key Features
 
 ### Premium Landing Page
-
-A polished SaaS-style homepage with:
 
 * Strong hero section
 * Clear product value proposition
@@ -69,7 +53,7 @@ A polished SaaS-style homepage with:
 
 ### Interactive Dashboard
 
-The product preview includes:
+The product dashboard includes:
 
 * Daily steps
 * Calories
@@ -82,9 +66,7 @@ The product preview includes:
 
 ### Habit Tracking
 
-Users can interact with daily habits through the dashboard.
-
-Example habits include:
+Users can interact with daily habits such as:
 
 * Drink Water
 * Morning Walk
@@ -95,35 +77,68 @@ Habit completion updates the interface dynamically.
 
 ### Interactive Dashboard Tabs
 
-The interactive demo includes:
+The dashboard includes three interactive views:
 
 * Overview
 * Habits
 * Activity
 
-Each tab displays different product information without reloading the page.
+The content changes dynamically without reloading the page.
 
 ### Responsive Navigation
 
-The navigation adapts to smaller screens with a mobile menu.
+The navigation adapts to smaller screens with a mobile menu powered by Vanilla JavaScript.
 
 ### Micro-Interactions
 
-The website includes subtle interactions such as:
+The interface includes subtle interactions such as:
 
 * Button hover states
 * Dashboard card interactions
 * Progress animations
-* Scroll-based interactions
+* Scroll interactions
 * Interactive tabs
 
-The animations are intentionally restrained so they support the product experience rather than distract from it.
+Animations are intentionally restrained so they support the user experience without becoming distracting.
 
 ### Easter Egg
 
 A small hidden interaction is included as a bonus feature.
 
-Triple-clicking the FitTrack logo reveals a small "Consistency Unlocked" notification.
+Triple-clicking the FitTrack logo displays a small "Consistency Unlocked" notification.
+
+---
+
+## Product Sections
+
+The homepage includes:
+
+1. Hero section
+2. Product dashboard
+3. Product showcase
+4. Features
+5. How It Works
+6. Interactive Demo
+7. Final CTA
+8. Footer
+
+Each section is designed around the actual product experience.
+
+---
+
+## How It Works
+
+### 1. Set Your Goals
+
+Choose the habits and fitness goals you want to focus on.
+
+### 2. Track Your Progress
+
+Update daily activity and habits through the dashboard.
+
+### 3. Build Consistency
+
+Use progress information to understand your routine and stay consistent.
 
 ---
 
@@ -137,22 +152,6 @@ Triple-clicking the FitTrack logo reveals a small "Consistency Unlocked" notific
 | Weekly Insights       | Understand activity patterns            |
 | Interactive Dashboard | View important information in one place |
 | Consistency Tracking  | Keep progress visible over time         |
-
----
-
-## How It Works
-
-### 1. Set Your Goals
-
-Choose the habits and fitness goals you want to focus on.
-
-### 2. Track Your Progress
-
-Update your daily activity and habits through the dashboard.
-
-### 3. Build Consistency
-
-Use your progress information to understand your routine and stay consistent.
 
 ---
 
@@ -180,14 +179,14 @@ FitTrack/
 ├── DECISIONS.md
 ├── README.md
 └── assets/
-    └── fittrack-dashboard.png
+    └── fittrack-demo.gif
 ```
 
 ---
 
 ## Design Approach
 
-The interface follows a modern SaaS design approach focused on:
+The interface follows a modern SaaS-style design approach focused on:
 
 * Strong typography
 * Clear visual hierarchy
@@ -195,11 +194,11 @@ The interface follows a modern SaaS design approach focused on:
 * Rounded UI components
 * Subtle borders
 * Soft shadows
-* Restrained animations
+* Restrained motion
 * Responsive layouts
 * Product-first presentation
 
-The homepage is structured around the actual product experience rather than relying on fabricated social proof.
+The homepage is designed to communicate the product value quickly while allowing users to see the product interface itself.
 
 ---
 
@@ -219,7 +218,7 @@ The mobile experience includes:
 * Mobile menu
 * Stacked content sections
 * Responsive dashboard
-* Full-width touch-friendly controls
+* Touch-friendly controls
 * Responsive typography
 * No horizontal scrolling
 
@@ -241,7 +240,7 @@ The desktop experience includes:
 
 ## Interactive Elements
 
-Vanilla JavaScript is used for lightweight product interactions including:
+Vanilla JavaScript is used for lightweight interactions including:
 
 * Mobile navigation
 * Dashboard tab switching
@@ -250,7 +249,7 @@ Vanilla JavaScript is used for lightweight product interactions including:
 * Scroll interactions
 * Easter egg interaction
 
-The project intentionally avoids unnecessary libraries and frameworks to keep the implementation lightweight and easy to understand.
+The implementation intentionally avoids unnecessary libraries and frameworks.
 
 ---
 
@@ -304,7 +303,7 @@ No build process is required.
 
 ### Option 1 — Open Directly
 
-Download or clone the repository and open:
+Clone or download the repository and open:
 
 ```text
 index.html
@@ -315,7 +314,7 @@ in a modern browser.
 ### Option 2 — VS Code Live Server
 
 1. Open the `FitTrack` folder in VS Code.
-2. Install the Live Server extension if needed.
+2. Install the Live Server extension if required.
 3. Right-click `index.html`.
 4. Select **Open with Live Server**.
 
@@ -339,11 +338,7 @@ http://localhost:3000
 
 The project is deployed as a static website using Vercel.
 
-### Production URL
-
-https://fit-track-two-gold.vercel.app/
-
-The project can also be deployed using other static hosting platforms such as GitHub Pages or Netlify.
+The production deployment can be accessed from the live demo link at the top of this README.
 
 ---
 
@@ -383,14 +378,30 @@ With additional development time, the project could be extended with:
 
 * User authentication
 * Persistent user data
-* Real fitness device integrations
+* Fitness device integrations
 * Backend API
 * Database storage
 * Personalized recommendations
 * Advanced analytics
-* More detailed progress reports
+* Detailed progress reports
 
 These features are outside the scope of the current frontend assignment.
+
+---
+
+## Demo Video
+
+A complete screen-recorded walkthrough can be added here when available.
+
+The walkthrough can demonstrate:
+
+* Hero section
+* Product dashboard
+* Habit interaction
+* Overview, Habits and Activity tabs
+* Responsive mobile navigation
+* Mobile layout
+* Micro-interactions
 
 ---
 
@@ -404,13 +415,10 @@ Interested in frontend development, cloud technologies and building practical di
 
 ---
 
-## Links
+## Project Links
 
-**Live Website:**
-https://fit-track-two-gold.vercel.app/
+**Live Demo:** FitTrack Production Website
 
-**GitHub Repository:**
-https://github.com/CSEBittuKr/FitTrack
+**Source Code:** CSEBittuKr / FitTrack
 
-**Project Documentation:**
-[DECISIONS.md](DECISIONS.md)
+**Documentation:** [DECISIONS.md](DECISIONS.md)
