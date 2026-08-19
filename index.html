@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitTrack — Build Better Habits. Track Your Progress.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="brand" id="brandLogo" aria-label="FitTrack Home">
+        <span class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">FitTrack</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="#product-preview" class="nav-link">Product</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#demo" class="btn btn-ghost">Log In</a>
+        <a href="#cta" class="btn btn-primary btn-sm">Get Started</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="4" y1="7" x2="20" y2="7"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <a href="#product-preview" class="mobile-link">Product</a>
+        <a href="#features" class="mobile-link">Features</a>
+        <a href="#how-it-works" class="mobile-link">How It Works</a>
+        <a href="#demo" class="mobile-link">Explore Demo</a>
+        <div class="mobile-menu-actions">
+          <a href="#demo" class="btn btn-secondary btn-block">Log In</a>
+          <a href="#cta" class="btn btn-primary btn-block">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Your daily progress, simplified
+          </div>
+          <h1 class="hero-title">Build better habits. Track your progress.</h1>
+          <p class="hero-desc">
+            FitTrack brings your workouts, daily habits, activity and goals together in one simple dashboard.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#cta" class="btn btn-primary btn-lg">Start Tracking</a>
+            <a href="#product-preview" class="btn btn-secondary btn-lg">Explore Dashboard</a>
+          </div>
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">✓</span>
+              <span>Daily Activity</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">✓</span>
+              <span>Habit Streaks</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">✓</span>
+              <span>Clear Goal Tracking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-preview" id="product-preview">
+          <div class="dashboard-window">
+            <div class="dash-topbar">
+              <div class="dash-window-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="dash-topbar-title">FitTrack Dashboard · Live Preview</div>
+              <div class="dash-status-pill">
+                <span class="live-indicator"></span>
+                <span>Active</span>
+              </div>
+            </div>
+
+            <div class="dash-body">
+              <div class="dash-greeting">
+                <div>
+                  <h3 class="greeting-title">Good morning, Alex</h3>
+                  <p class="greeting-sub">Here's your progress today</p>
+                </div>
+                <div class="dash-date-badge">Today · Week 42</div>
+              </div>
+
+              <div class="metrics-grid">
+                <div class="metric-card">
+                  <div class="metric-header">
+                    <span class="metric-label">Daily Goal</span>
+                    <span class="metric-tag tag-green">On Track</span>
+                  </div>
+                  <div class="metric-value">78%</div>
+                  <div class="progress-track">
+                    <div class="progress-fill" style="width: 78%;"></div>
+                  </div>
+                  <span class="metric-footnote">2 of 3 targets reached</span>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-header">
+                    <span class="metric-label">Daily Steps</span>
+                    <span class="metric-icon-small">👟</span>
+                  </div>
+                  <div class="metric-value">7,842</div>
+                  <div class="progress-track">
+                    <div class="progress-fill" style="width: 78.4%;"></div>
+                  </div>
+                  <span class="metric-footnote">Goal: 10,000 steps</span>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-header">
+                    <span class="metric-label">Calories</span>
+                    <span class="metric-icon-small">🔥</span>
+                  </div>
+                  <div class="metric-value">1,860 <span class="metric-unit">kcal</span></div>
+                  <div class="progress-track">
+                    <div class="progress-fill" style="width: 84%;"></div>
+                  </div>
+                  <span class="metric-footnote">Burn target: 2,200</span>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-header">
+                    <span class="metric-label">Active Time</span>
+                    <span class="metric-icon-small">⚡</span>
+                  </div>
+                  <div class="metric-value">42 <span class="metric-unit">mins</span></div>
+                  <div class="progress-track">
+                    <div class="progress-fill" style="width: 70%;"></div>
+                  </div>
+                  <span class="metric-footnote">Goal: 60 mins</span>
+                </div>
+              </div>
+
+              <div class="dash-grid-secondary">
+                <div class="dash-panel">
+                  <div class="panel-header">
+                    <div>
+                      <h4 class="panel-title">Weekly Activity</h4>
+                      <p class="panel-desc">Daily movement breakdown</p>
+                    </div>
+                    <span class="panel-badge">Avg: 8,420 steps</span>
+                  </div>
+
+                  <div class="activity-chart" aria-label="Weekly Activity Bar Chart">
+                    <div class="chart-column">
+                      <div class="bar-shell">
+                        <div class="bar-bar" style="height: 65%;"></div>
+                      </div>
+                      <span class="day-label">Mon</span>
+                    </div>
+                    <div class="chart-column">
+                      <div class="bar-shell">
+                        <div class="bar-bar" style="height: 82%;"></div>
+                      </div>
+                      <span class="day-label">Tue</span>
+                    </div>
+                    <div class="chart-column">
+                      <div class="bar-shell">
+                        <div class="bar-bar" style="height: 70%;"></div>
+                      </div>
+                      <span class="day-label">Wed</span>
+                    </div>
+                    <div class="chart-column">
+                      <div class="bar-shell">
+                        <div class="bar-bar" style="height: 90%;"></div>
+                      </div>
+                      <span class="day-label">Thu</span>
+                    </div>
+                    <div class="chart-column">
+                      <div class="bar-shell">
+                        <div class="bar-bar bar-active" style="height: 98%;"></div>
+                      </div>
+                      <span class="day-label day-active">Fri</span>
+                    </div>
+                    <div class="chart-column">
+                      <div class="bar-shell">
+                        <div class="bar-bar" style="height: 85%;"></div>
+                      </div>
+                      <span class="day-label">Sat</span>
+                    </div>
+                    <div class="chart-column">
+                      <div class="bar-shell">
+                        <div class="bar-bar" style="height: 78%;"></div>
+                      </div>
+                      <span class="day-label">Sun</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="dash-panel">
+                  <div class="panel-header">
+                    <div>
+                      <h4 class="panel-title">Today's Habits</h4>
+                      <p class="panel-desc" id="heroHabitsCount">3 of 4 completed (75%)</p>
+                    </div>
+                    <span class="streak-badge">🔥 14 Days</span>
+                  </div>
+
+                  <div class="habits-list" id="heroHabitsList">
+                    <label class="habit-item">
+                      <input type="checkbox" class="habit-checkbox" checked>
+                      <span class="habit-custom-check"></span>
+                      <span class="habit-name">Drink Water (2.5L)</span>
+                      <span class="habit-time">08:15 AM</span>
+                    </label>
+
+                    <label class="habit-item">
+                      <input type="checkbox" class="habit-checkbox" checked>
+                      <span class="habit-custom-check"></span>
+                      <span class="habit-name">Morning Walk (30 mins)</span>
+                      <span class="habit-time">07:30 AM</span>
+                    </label>
+
+                    <label class="habit-item">
+                      <input type="checkbox" class="habit-checkbox" checked>
+                      <span class="habit-custom-check"></span>
+                      <span class="habit-name">Workout (Upper Body)</span>
+                      <span class="habit-time">08:45 AM</span>
+                    </label>
+
+                    <label class="habit-item">
+                      <input type="checkbox" class="habit-checkbox">
+                      <span class="habit-custom-check"></span>
+                      <span class="habit-name">Read 20 Minutes</span>
+                      <span class="habit-time">Evening</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dash-grid-tertiary">
+                <div class="dash-panel mini-goal-panel">
+                  <div class="mini-goal-header">
+                    <span class="goal-tag">Current Goal</span>
+                    <span class="goal-pct">72%</span>
+                  </div>
+                  <div class="goal-name">30 Day Consistency Challenge</div>
+                  <div class="progress-track">
+                    <div class="progress-fill" style="width: 72%;"></div>
+                  </div>
+                  <div class="goal-subtext">22 of 30 days completed without interruption</div>
+                </div>
+
+                <div class="dash-panel mini-timeline-panel">
+                  <div class="timeline-title">Recent Activity</div>
+                  <ul class="timeline-list">
+                    <li class="timeline-item">
+                      <span class="tl-bullet"></span>
+                      <span class="tl-text">Morning Walk completed</span>
+                      <span class="tl-time">07:30 AM</span>
+                    </li>
+                    <li class="timeline-item">
+                      <span class="tl-bullet"></span>
+                      <span class="tl-text">Workout completed</span>
+                      <span class="tl-time">08:45 AM</span>
+                    </li>
+                    <li class="timeline-item">
+                      <span class="tl-bullet"></span>
+                      <span class="tl-text">Water goal updated</span>
+                      <span class="tl-time">11:15 AM</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section showcase-section" id="showcase">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-eyebrow">Product Experience</span>
+          <h2 class="section-title">Everything you need to stay consistent</h2>
+          <p class="section-desc">
+            FitTrack brings daily habits, activity and personal goals into one simple experience.
+          </p>
+        </div>
+
+        <div class="showcase-grid">
+          <article class="showcase-card">
+            <div class="showcase-content">
+              <span class="showcase-pill">Daily Tracking</span>
+              <h3 class="showcase-title">Track Your Day</h3>
+              <p class="showcase-text">
+                Keep track of your movement, active hours, and calories burned throughout your everyday routine.
+              </p>
+              <ul class="showcase-checklist">
+                <li>Real-time step counting and goal updates</li>
+                <li>Active energy and calorie calculation</li>
+                <li>Clear progress indicators for each day</li>
+              </ul>
+            </div>
+            <div class="showcase-mockup">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-label">Daily Movement</span>
+              </div>
+              <div class="movement-preview">
+                <div class="movement-ring-box">
+                  <div class="movement-ring">
+                    <span class="ring-value">7,842</span>
+                    <span class="ring-unit">Steps</span>
+                  </div>
+                </div>
+                <div class="movement-stats">
+                  <div class="stat-row">
+                    <span class="stat-name">Active Time</span>
+                    <span class="stat-val">42 mins</span>
+                  </div>
+                  <div class="stat-row">
+                    <span class="stat-name">Calories</span>
+                    <span class="stat-val">1,860 kcal</span>
+                  </div>
+                  <div class="stat-row">
+                    <span class="stat-name">Goal Status</span>
+                    <span class="stat-val text-green">78% Reached</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <div class="showcase-content">
+              <span class="showcase-pill">Habit Building</span>
+              <h3 class="showcase-title">Build Better Habits</h3>
+              <p class="showcase-text">
+                Organize your essential daily habits, check them off as you complete them, and protect your streak.
+              </p>
+              <ul class="showcase-checklist">
+                <li>Simple one-tap habit completion</li>
+                <li>Visual streak indicators for daily motivation</li>
+                <li>Custom routines for morning, afternoon and night</li>
+              </ul>
+            </div>
+            <div class="showcase-mockup">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-label">Routine Checklist</span>
+                <span class="streak-chip">🔥 14 Days</span>
+              </div>
+              <div class="routine-preview">
+                <div class="routine-item is-done">
+                  <span class="routine-check">✓</span>
+                  <div class="routine-meta">
+                    <span class="routine-name">Morning Hydration</span>
+                    <span class="routine-sub">Target: 2.5L Water</span>
+                  </div>
+                  <span class="routine-status">Done</span>
+                </div>
+                <div class="routine-item is-done">
+                  <span class="routine-check">✓</span>
+                  <div class="routine-meta">
+                    <span class="routine-name">Strength Training</span>
+                    <span class="routine-sub">45 min session</span>
+                  </div>
+                  <span class="routine-status">Done</span>
+                </div>
+                <div class="routine-item">
+                  <span class="routine-check check-pending"></span>
+                  <div class="routine-meta">
+                    <span class="routine-name">Daily Reading</span>
+                    <span class="routine-sub">20 minutes</span>
+                  </div>
+                  <span class="routine-status pending">Pending</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <div class="showcase-content">
+              <span class="showcase-pill">Trends & Analytics</span>
+              <h3 class="showcase-title">Understand Your Progress</h3>
+              <p class="showcase-text">
+                Review your weekly and monthly activity patterns to see how your consistency compounds over time.
+              </p>
+              <ul class="showcase-checklist">
+                <li>Clear weekly activity and workout summaries</li>
+                <li>30-day milestone progress tracking</li>
+                <li>Objective insights into habit consistency</li>
+              </ul>
+            </div>
+            <div class="showcase-mockup">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-label">Weekly Overview</span>
+                <span class="pct-chip">84% Consistency</span>
+              </div>
+              <div class="progress-preview">
+                <div class="progress-chart-bars">
+                  <div class="mini-bar-col">
+                    <div class="mini-bar-fill" style="height: 60%;"></div>
+                    <span>M</span>
+                  </div>
+                  <div class="mini-bar-col">
+                    <div class="mini-bar-fill" style="height: 80%;"></div>
+                    <span>T</span>
+                  </div>
+                  <div class="mini-bar-col">
+                    <div class="mini-bar-fill" style="height: 70%;"></div>
+                    <span>W</span>
+                  </div>
+                  <div class="mini-bar-col">
+                    <div class="mini-bar-fill" style="height: 95%;"></div>
+                    <span>T</span>
+                  </div>
+                  <div class="mini-bar-col">
+                    <div class="mini-bar-fill fill-active" style="height: 100%;"></div>
+                    <span>F</span>
+                  </div>
+                  <div class="mini-bar-col">
+                    <div class="mini-bar-fill" style="height: 85%;"></div>
+                    <span>S</span>
+                  </div>
+                  <div class="mini-bar-col">
+                    <div class="mini-bar-fill" style="height: 75%;"></div>
+                    <span>S</span>
+                  </div>
+                </div>
+                <div class="milestone-box">
+                  <div class="milestone-text">
+                    <strong>30 Day Challenge:</strong> 22 of 30 days completed
+                  </div>
+                  <div class="progress-track">
+                    <div class="progress-fill" style="width: 72%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features-section" id="features">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-eyebrow">Core Features</span>
+          <h2 class="section-title">Designed around your daily routine</h2>
+          <p class="section-desc">
+            Six focused tools built to help you track movement, maintain consistency, and reach your goals.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Daily Activity</h3>
+            <p class="feature-desc">Track daily movement, step counts, calories, and active workout time in real time.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 11L12 14L22 4"/>
+                <path d="M21 12V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H16"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Habit Tracking</h3>
+            <p class="feature-desc">Keep important habits visible, check them off easily, and maintain your routine.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6V12L16 14"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Goal Progress</h3>
+            <p class="feature-desc">See exactly how close you are to completing personal fitness and consistency targets.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 20V10"/>
+                <path d="M12 20V4"/>
+                <path d="M6 20V14"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Weekly Insights</h3>
+            <p class="feature-desc">Understand your activity patterns and identify your most active days of the week.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9H21"/>
+                <path d="M9 21V9"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Simple Dashboard</h3>
+            <p class="feature-desc">See all your essential daily numbers quickly without unnecessary clutter or complexity.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12C11 9.5 8.5 7 8.5 7S6 9.5 6 12A2.5 2.5 0 0 0 8.5 14.5Z"/>
+                <path d="M15.5 17.5A4.5 4.5 0 0 0 20 13C20 8.5 15.5 4 15.5 4S11 8.5 11 13A4.5 4.5 0 0 0 15.5 17.5Z"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Consistency Tracking</h3>
+            <p class="feature-desc">Build lasting habits over 30-day cycles by keeping your ongoing streaks visible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps-section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-eyebrow">How It Works</span>
+          <h2 class="section-title">Three simple steps to build daily momentum</h2>
+          <p class="section-desc">
+            A straightforward process designed to help you stay accountable every single day.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-badge">Step 1</div>
+            <h3 class="step-title">Set Your Goals</h3>
+            <p class="step-desc">
+              Choose the daily habits, fitness targets, and routines you want to focus on for the next 30 days.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-badge">Step 2</div>
+            <h3 class="step-title">Track Your Progress</h3>
+            <p class="step-desc">
+              Update your daily movement and check off completed habits throughout your morning and evening.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-badge">Step 3</div>
+            <h3 class="step-title">Build Consistency</h3>
+            <p class="step-desc">
+              Review your weekly trends to understand your routine, maintain your streaks, and keep progressing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section demo-section" id="demo">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-eyebrow">Interactive Demo</span>
+          <h2 class="section-title">See your progress at a glance</h2>
+          <p class="section-desc">
+            Click through each tab below to explore how FitTrack organizes your daily fitness and habit data.
+          </p>
+        </div>
+
+        <div class="demo-wrapper">
+          <div class="demo-tabs" role="tablist" aria-label="Demo Views">
+            <button class="demo-tab is-active" id="tabOverview" role="tab" aria-selected="true" aria-controls="panelOverview" data-tab="overview">
+              Overview
+            </button>
+            <button class="demo-tab" id="tabHabits" role="tab" aria-selected="false" aria-controls="panelHabits" data-tab="habits">
+              Habits
+            </button>
+            <button class="demo-tab" id="tabActivity" role="tab" aria-selected="false" aria-controls="panelActivity" data-tab="activity">
+              Activity
+            </button>
+          </div>
+
+          <div class="demo-panel is-active" id="panelOverview" role="tabpanel" aria-labelledby="tabOverview">
+            <div class="demo-panel-header">
+              <div>
+                <h3 class="demo-panel-title">Today's Performance Overview</h3>
+                <p class="demo-panel-sub">Consolidated view of your daily movement, habits, and target completion.</p>
+              </div>
+              <span class="demo-score-chip">Daily Score: 84%</span>
+            </div>
+
+            <div class="demo-stats-row">
+              <div class="demo-stat-box">
+                <span class="demo-stat-label">Daily Movement</span>
+                <span class="demo-stat-number">7,842</span>
+                <span class="demo-stat-sub text-green">78% of 10,000 steps</span>
+              </div>
+              <div class="demo-stat-box">
+                <span class="demo-stat-label">Habits Completed</span>
+                <span class="demo-stat-number">3 / 4</span>
+                <span class="demo-stat-sub text-green">75% routine done</span>
+              </div>
+              <div class="demo-stat-box">
+                <span class="demo-stat-label">Calorie Output</span>
+                <span class="demo-stat-number">1,860</span>
+                <span class="demo-stat-sub text-slate">Goal: 2,200 kcal</span>
+              </div>
+              <div class="demo-stat-box">
+                <span class="demo-stat-label">Active Streak</span>
+                <span class="demo-stat-number">14 Days</span>
+                <span class="demo-stat-sub text-green">Current Best Streak</span>
+              </div>
+            </div>
+
+            <div class="demo-highlight-bar">
+              <div class="d-highlight-info">
+                <strong>Overall Daily Consistency</strong>
+                <span>You are 2 habits away from reaching your perfect week badge.</span>
+              </div>
+              <div class="d-progress-wrap">
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 84%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-panel" id="panelHabits" role="tabpanel" aria-labelledby="tabHabits">
+            <div class="demo-panel-header">
+              <div>
+                <h3 class="demo-panel-title">Daily Habit Management</h3>
+                <p class="demo-panel-sub">Click any habit below to toggle completion and update your progress score.</p>
+              </div>
+              <span class="demo-score-chip" id="demoHabitsStatus">4 of 5 Completed (80%)</span>
+            </div>
+
+            <div class="demo-habits-container" id="interactiveHabitsList">
+              <div class="demo-habit-card is-completed" data-habit="1">
+                <button class="demo-check-btn" aria-label="Toggle habit">✓</button>
+                <div class="demo-habit-info">
+                  <span class="demo-habit-title">Drink 2.5 Liters of Water</span>
+                  <span class="demo-habit-category">Health & Hydration · 2.5L logged</span>
+                </div>
+                <span class="demo-streak-tag">🔥 14d</span>
+              </div>
+
+              <div class="demo-habit-card is-completed" data-habit="2">
+                <button class="demo-check-btn" aria-label="Toggle habit">✓</button>
+                <div class="demo-habit-info">
+                  <span class="demo-habit-title">30-Minute Morning Walk</span>
+                  <span class="demo-habit-category">Cardio & Mobility · 3.2 km</span>
+                </div>
+                <span class="demo-streak-tag">🔥 14d</span>
+              </div>
+
+              <div class="demo-habit-card is-completed" data-habit="3">
+                <button class="demo-check-btn" aria-label="Toggle habit">✓</button>
+                <div class="demo-habit-info">
+                  <span class="demo-habit-title">Strength Training Workout</span>
+                  <span class="demo-habit-category">Fitness · Upper body circuit</span>
+                </div>
+                <span class="demo-streak-tag">🔥 8d</span>
+              </div>
+
+              <div class="demo-habit-card is-completed" data-habit="4">
+                <button class="demo-check-btn" aria-label="Toggle habit">✓</button>
+                <div class="demo-habit-info">
+                  <span class="demo-habit-title">Healthy Lunch & Nutrition</span>
+                  <span class="demo-habit-category">Nutrition · Balanced meal</span>
+                </div>
+                <span class="demo-streak-tag">🔥 21d</span>
+              </div>
+
+              <div class="demo-habit-card" data-habit="5">
+                <button class="demo-check-btn" aria-label="Toggle habit"></button>
+                <div class="demo-habit-info">
+                  <span class="demo-habit-title">20 Minutes of Reading</span>
+                  <span class="demo-habit-category">Mindset · Evening routine</span>
+                </div>
+                <span class="demo-streak-tag tag-pending">Pending</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-panel" id="panelActivity" role="tabpanel" aria-labelledby="tabActivity">
+            <div class="demo-panel-header">
+              <div>
+                <h3 class="demo-panel-title">Weekly Activity Breakdown</h3>
+                <p class="demo-panel-sub">Compare daily steps, workout sessions, and active duration across the week.</p>
+              </div>
+              <span class="demo-score-chip">Weekly Total: 58,940 Steps</span>
+            </div>
+
+            <div class="demo-activity-layout">
+              <div class="demo-activity-chart-box">
+                <div class="d-chart-title">Steps per day (Monday — Sunday)</div>
+                <div class="d-chart-columns">
+                  <div class="d-chart-item">
+                    <span class="d-bar-val">7.2k</span>
+                    <div class="d-bar-track">
+                      <div class="d-bar-fill" style="height: 72%;"></div>
+                    </div>
+                    <span class="d-day">Mon</span>
+                  </div>
+                  <div class="d-chart-item">
+                    <span class="d-bar-val">8.8k</span>
+                    <div class="d-bar-track">
+                      <div class="d-bar-fill" style="height: 88%;"></div>
+                    </div>
+                    <span class="d-day">Tue</span>
+                  </div>
+                  <div class="d-chart-item">
+                    <span class="d-bar-val">7.4k</span>
+                    <div class="d-bar-track">
+                      <div class="d-bar-fill" style="height: 74%;"></div>
+                    </div>
+                    <span class="d-day">Wed</span>
+                  </div>
+                  <div class="d-chart-item">
+                    <span class="d-bar-val">9.6k</span>
+                    <div class="d-bar-track">
+                      <div class="d-bar-fill" style="height: 96%;"></div>
+                    </div>
+                    <span class="d-day">Thu</span>
+                  </div>
+                  <div class="d-chart-item">
+                    <span class="d-bar-val">10.2k</span>
+                    <div class="d-bar-track">
+                      <div class="d-bar-fill is-peak" style="height: 100%;"></div>
+                    </div>
+                    <span class="d-day text-green font-bold">Fri</span>
+                  </div>
+                  <div class="d-chart-item">
+                    <span class="d-bar-val">8.1k</span>
+                    <div class="d-bar-track">
+                      <div class="d-bar-fill" style="height: 81%;"></div>
+                    </div>
+                    <span class="d-day">Sat</span>
+                  </div>
+                  <div class="d-chart-item">
+                    <span class="d-bar-val">7.6k</span>
+                    <div class="d-bar-track">
+                      <div class="d-bar-fill" style="height: 76%;"></div>
+                    </div>
+                    <span class="d-day">Sun</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="demo-workout-log">
+                <div class="d-log-title">Logged Sessions This Week</div>
+                <div class="d-log-item">
+                  <div class="d-log-icon">🏃</div>
+                  <div class="d-log-meta">
+                    <strong>Morning Run</strong>
+                    <span>Friday · 5.4 km · 34 mins</span>
+                  </div>
+                  <span class="d-log-cal">420 kcal</span>
+                </div>
+                <div class="d-log-item">
+                  <div class="d-log-icon">🏋️</div>
+                  <div class="d-log-meta">
+                    <strong>Strength Training</strong>
+                    <span>Thursday · Upper Body · 45 mins</span>
+                  </div>
+                  <span class="d-log-cal">360 kcal</span>
+                </div>
+                <div class="d-log-item">
+                  <div class="d-log-icon">🚴</div>
+                  <div class="d-log-meta">
+                    <strong>Indoor Cycling</strong>
+                    <span>Tuesday · Moderate Pace · 30 mins</span>
+                  </div>
+                  <span class="d-log-cal">280 kcal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section" id="cta">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-content">
+            <span class="cta-eyebrow">Start Today</span>
+            <h2 class="cta-title">Make progress visible.</h2>
+            <p class="cta-desc">
+              Start with one habit, one goal and one day at a time.
+            </p>
+            <div class="cta-buttons">
+              <a href="#product-preview" class="btn btn-primary btn-lg">Get Started</a>
+              <a href="#demo" class="btn btn-secondary btn-lg">Explore Interactive Demo</a>
+            </div>
+            <div class="cta-points">
+              <span>✓ Simple setup</span>
+              <span>✓ No complicated menus</span>
+              <span>✓ Focus on consistency</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand-col">
+        <a href="#top" class="brand" aria-label="FitTrack Home">
+          <span class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="brand-name">FitTrack</span>
+        </a>
+        <p class="footer-desc">
+          A simple way to understand your daily habits, activity and progress.
+        </p>
+      </div>
+
+      <div class="footer-nav-col">
+        <span class="footer-heading">Navigation</span>
+        <a href="#product-preview" class="footer-link">Product</a>
+        <a href="#features" class="footer-link">Features</a>
+        <a href="#how-it-works" class="footer-link">How It Works</a>
+        <a href="#demo" class="footer-link">Demo</a>
+      </div>
+
+      <div class="footer-nav-col">
+        <span class="footer-heading">Product</span>
+        <a href="#features" class="footer-link">Daily Activity</a>
+        <a href="#features" class="footer-link">Habit Tracker</a>
+        <a href="#features" class="footer-link">Goal Insights</a>
+      </div>
+
+      <div class="footer-nav-col">
+        <span class="footer-heading">Information</span>
+        <a href="#top" class="footer-link">Privacy</a>
+        <a href="#top" class="footer-link">Contact</a>
+        <div class="system-status">
+          <span class="status-indicator"></span>
+          <span>All Systems Operational</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="copyright">© 2026 FitTrack. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="easter-egg-toast" id="easterEggToast" role="status" aria-live="polite">
+    <div class="toast-content">
+      <span class="toast-emoji">🎉</span>
+      <div>
+        <div class="toast-title">Consistency Unlocked!</div>
+        <div class="toast-sub">You found the secret FitTrack streak easter egg.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
