@@ -49,8 +49,7 @@ FitTrack/
 ├── script.js
 ├── DECISIONS.md
 ├── README.md
-└── assets/
-    └── fittrack-demo.gif
+
 ```
 
 ## Documentation
