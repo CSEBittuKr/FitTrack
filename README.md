@@ -16,9 +16,9 @@ FitTrack is a premium, responsive fitness and habit-tracking web experience desi
 
 ## Preview
 
-### Desktop Preview
+### Interactive Demo
 
-![FitTrack Dashboard](assets/fittrack-dashboard.png)
+![FitTrack Demo](assets/fittrack-demo.gif)
 
 ### Live Product
 
